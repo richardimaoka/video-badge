@@ -6,3 +6,38 @@
   height: 100svh;
   background-color: #e6e6e6;
 }
+
+.inner {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  position: relative;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border-radius: 16px;
+  background-color: white;
+
+  box-sizing: border-box;
+}
+
+.inner > * {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.inner > *:nth-child(2) {
+  position: absolute;
+  transform: translate(50%, -50%);
+  /* transform-origin: center; */
+}
+
+span.icon {
+  font-size: 3rem;
+}

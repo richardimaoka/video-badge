@@ -5,6 +5,11 @@ type Props = {
 };
 
 export function Badge(props: Props) {
-  const display = props.number > 999 ? "999+" : props.number;
-  return <span className={styles.component}>{display}</span>;
+  const display = props.number > 99 ? "99+" : props.number;
+
+  return props.number === 0 ? (
+    <></>
+  ) : (
+    <span className={styles.component}>{display}</span>
+  );
 }

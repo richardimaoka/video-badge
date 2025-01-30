@@ -8,7 +8,7 @@
   min-width: 20px;
   height: 20px;
   /* border-radius = min-width/height makes a pill-like shape for multi-digits */
-  border-radius: 20px;
+  border-radius: 14px; /*height*/
 
   /* grid centering for single digit to be centered */
   display: grid;
