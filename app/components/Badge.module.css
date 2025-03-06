@@ -5,12 +5,17 @@
   /* border-radius = height/2 makes a pill shape for multi-digits */
   border-radius: 12px; /* half the height */
 
+  /* minimum side padding */
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 4px;
+
   /* grid centering for digits to be centered */
   display: grid;
   align-content: center;
   justify-content: center;
 
-  background-color: rgb(160, 48, 212);
+  background-color: #a030d4;
   color: white;
 
   font-weight: 700;

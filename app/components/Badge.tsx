@@ -5,7 +5,7 @@ type Props = {
 };
 
 export function Badge(props: Props) {
-  const display = props.number > 999 ? "999+" : props.number;
+  const display = props.number > 9999 ? "9999+" : props.number;
 
   return props.number === 0 ? (
     <></>
