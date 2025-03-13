@@ -1,4 +1,6 @@
 .component {
+  justify-self: center;
+
   /* min-width/height to make single digit a perfect circle */
   min-width: 24px;
   height: 24px;
