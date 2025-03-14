@@ -27,11 +27,16 @@
   box-sizing: border-box;
 }
 
-/* .inner > *:nth-child(2) {
+.roundBox > * {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.roundBox > *:nth-child(2) {
   transform: translate(50%, -50%);
   animation-name: move;
   animation-duration: 2s;
-  /* transform-origin: center; */
+}
 
 @keyframes move {
   0% {
